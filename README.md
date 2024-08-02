@@ -3,8 +3,30 @@
 ## 📖 Aulas
 
 ### Aula 01 (30.07.2024)
+
+#### Anotações:
 Estamos usando no repositório o commit semântico [semantic commit](https://www.conventionalcommits.org/en/v1.0.0/).
 
+#### Conteúdo:
+- [X] Introdução ao NodeJS
+- [X] Executando scripts
+- [X] Node CLI
+- [X] Lendo argumentos na CLI
+- [X] Instalando um pacote
+- [X] Lendo argumentos na CLI com Yargs
+
+### Aula 02 (01.08.2024)
+
+#### Anotações:
+N/A
+
+#### Conteúdo:
+- [X] Correção de problemas de ambiente
+- [X] NPM
+- [X] Dependências de produção
+- [X] Dependências de desenvolvimento
+- [X] Scripts
+- [X] Node Watch
 
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
