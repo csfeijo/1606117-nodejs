@@ -2,11 +2,10 @@ const yargs = require("yargs/yargs");
 const { hideBin } = require("yargs/helpers");
 const argv = yargs(hideBin(process.argv)).argv;
 
-console.log(process.argv)
-
 const tasks = [
   {  id: 1,
-    title: 'Comprar Livro'},
+    title: 'Comprar Livro'
+  },
   {
     id: 2,
     title: 'Emprestar Livro'
