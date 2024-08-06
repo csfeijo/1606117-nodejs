@@ -28,6 +28,18 @@ N/A
 - [X] Scripts
 - [X] Node Watch
 
+### Aula 03 (05.08.2024)
+
+#### Anotações:
+N/A
+
+#### Conteúdo:
+- [X] Correção de exercício
+- [X] versionamento de código
+- [X] import vs require
+- [X] backend
+- [X] requisições HTTP
+
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
 |-|-|
@@ -44,4 +56,4 @@ Wagner Willian Worst | https://github.com/wagnerworst/NodeJSBackend
 
 ## 🔗 Links úteis
 - [Replit - Simulador de Linguagens](https://replit.com)
-
+- [Erick Wendel - referência em JS](https://www.youtube.com/c/ErickWendelTreinamentos_)
