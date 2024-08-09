@@ -42,6 +42,12 @@ N/A
 
 ### Aula 04 (08.08.2024)
 
+- [X] revisão HTTP
+- [X] métodos HTTP
+- [X] requests com HTTP usando CURL
+- [X] fluxo de envio de dados (form -> backend)
+- [X] setup da aplicação NodeJS com TS
+
 #### Anotações
 CURLS:
 Exemplo de GET:
@@ -52,9 +58,6 @@ Exemplo de POST:
 ```
 curl -X POST http://localhost:3000/cadastro
 ```
-
-
-
 
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
