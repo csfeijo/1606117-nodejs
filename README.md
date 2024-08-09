@@ -40,6 +40,22 @@ N/A
 - [X] backend
 - [X] requisições HTTP
 
+### Aula 04 (08.08.2024)
+
+#### Anotações
+CURLS:
+Exemplo de GET:
+```
+curl http://localhost:3000/cadastro
+```
+Exemplo de POST:
+```
+curl -X POST http://localhost:3000/cadastro
+```
+
+
+
+
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
 |-|-|
