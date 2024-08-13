@@ -4,9 +4,6 @@
 
 ### Aula 01 (30.07.2024)
 
-#### Anotações:
-Estamos usando no repositório o commit semântico [semantic commit](https://www.conventionalcommits.org/en/v1.0.0/).
-
 #### Conteúdo:
 - [X] Introdução ao NodeJS
 - [X] Executando scripts
@@ -15,10 +12,10 @@ Estamos usando no repositório o commit semântico [semantic commit](https://www
 - [X] Instalando um pacote
 - [X] Lendo argumentos na CLI com Yargs
 
-### Aula 02 (01.08.2024)
-
 #### Anotações:
-N/A
+Estamos usando no repositório o commit semântico [semantic commit](https://www.conventionalcommits.org/en/v1.0.0/).
+
+### Aula 02 (01.08.2024)
 
 #### Conteúdo:
 - [X] Correção de problemas de ambiente
@@ -28,10 +25,10 @@ N/A
 - [X] Scripts
 - [X] Node Watch
 
-### Aula 03 (05.08.2024)
-
 #### Anotações:
 N/A
+
+### Aula 03 (05.08.2024)
 
 #### Conteúdo:
 - [X] Correção de exercício
@@ -39,6 +36,9 @@ N/A
 - [X] import vs require
 - [X] backend
 - [X] requisições HTTP
+
+#### Anotações:
+N/A
 
 ### Aula 04 (08.08.2024)
 
@@ -58,6 +58,18 @@ Exemplo de POST:
 ```
 curl -X POST http://localhost:3000/cadastro
 ```
+
+### Aula 05 (12.08.2024)
+
+- [X] Express
+= [X] Método GET
+- [X] Extraindo informações via Query String
+- [X] Extraindo informações via parameter
+
+
+#### Anotações
+- From scratch: termo usado quando desenvolvemos algo do zero.
+
 
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
