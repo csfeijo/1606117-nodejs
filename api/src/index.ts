@@ -2,6 +2,9 @@ import express, { Request, Response } from 'express';
 
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
+
 app.use(express.static('public'));
 const porta = 3030;
 
@@ -14,9 +17,6 @@ app.get('/ping', (req: Request, res: Response):void => {
 })
 
 app.get('/soma', (req: Request, res: Response): void => {
-  
-  // http://localhost:3030?num1=1&num2=1&num3=5
-
   const {num1, num2, num3} = req.query as { num1: string; num2: string; num3: string };
   const soma = parseInt(num1, 10) + parseInt(num2, 10) + parseInt(num3, 10);
 
@@ -40,6 +40,23 @@ app.get('/clientes', (req: Request, res: Response):void => {
 
 
 
+app.get('/funcionarios',  (req: Request, res: Response):void => {
+  const funcionario = [{
+    nome: "Cicero",
+    salario: "2000.25",
+    idade: 43
+  }];
+
+  res.contentType('application/json');
+  res.send(funcionario);  
+});
+
+app.post('/departamentos',  (req: Request, res: Response):void => {
+
+  console.log(req.body);
+
+  res.send('POST departamentos');
+});
 
 
 

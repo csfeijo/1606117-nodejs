@@ -62,7 +62,7 @@ curl -X POST http://localhost:3000/cadastro
 ### Aula 05 (12.08.2024)
 
 - [X] Express
-= [X] Método GET
+- [X] Método GET
 - [X] Extraindo informações via Query String
 - [X] Extraindo informações via parameter
 
@@ -70,6 +70,28 @@ curl -X POST http://localhost:3000/cadastro
 #### Anotações
 - From scratch: termo usado quando desenvolvemos algo do zero.
 
+### Aula 06 (13.08.2024)
+
+- [X] Verbos HTTP
+- [X] HTTP Responses
+- [X] Status Codes
+- [X] Content Types
+- [X] Requisições Via GET
+- [X] Requisições Via POST
+- [X] Postman
+  - [X] Collection
+
+#### Anotações
+- Aplicativos similares ao Postman
+- [Thunderclient](https://www.thunderclient.com/)
+- [Insomnia](https://insomnia.rest/)
+- [Postman](https://www.postman.com/)
+
+
+### Aula 07 (15.08.2024)
+### Aula 08 (19.08.2024)
+### Aula 09 (20.08.2024)
+### Aula 10 (22.08.2024)
 
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
