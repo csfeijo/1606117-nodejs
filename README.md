@@ -89,6 +89,14 @@ curl -X POST http://localhost:3000/cadastro
 
 
 ### Aula 07 (15.08.2024)
+
+
+
+#### Anotações
+- Estudar padrões de código (CLEAN CODE, SOLID, MVC - Model View Controller, DRY, etc).
+
+
+
 ### Aula 08 (19.08.2024)
 ### Aula 09 (20.08.2024)
 ### Aula 10 (22.08.2024)
