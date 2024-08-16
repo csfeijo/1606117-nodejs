@@ -89,13 +89,15 @@ curl -X POST http://localhost:3000/cadastro
 
 
 ### Aula 07 (15.08.2024)
-
-
+- [X] Estruturação do projeto com MVC
+- [X] Conexão com banco de dados usando mysql2
+- [X] Listagem de Departamentos
+- [X] Inserção de Departamentos
 
 #### Anotações
 - Estudar padrões de código (CLEAN CODE, SOLID, MVC - Model View Controller, DRY, etc).
-
-
+- Corpo da request ou corpo da response => Payload da request e payload da response
+- SQL Injection: entender como funciona para evitar problemas de segurança
 
 ### Aula 08 (19.08.2024)
 ### Aula 09 (20.08.2024)
