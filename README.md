@@ -100,6 +100,12 @@ curl -X POST http://localhost:3000/cadastro
 - SQL Injection: entender como funciona para evitar problemas de segurança
 
 ### Aula 08 (19.08.2024)
+- [] Correção do exercício do DELETE
+- [] Arquivo de deploy da Vercel
+- [] Deploy na Vercel
+- [] .env para o banco de dados
+
+
 ### Aula 09 (20.08.2024)
 ### Aula 10 (22.08.2024)
 
