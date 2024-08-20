@@ -7,4 +7,9 @@ router.get('/departamentos', listaDepartamentos);
 router.post('/departamentos', validaDepartamento, insereDepartamento);
 router.delete('/departamentos', excluiDepartamento);
 
+
+
+
+// rota.metodo('/caminho', funcaodevalidacao, funcaoquefazoquetemquefazer)
+
 export default router;

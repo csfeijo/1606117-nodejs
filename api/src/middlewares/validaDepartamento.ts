@@ -13,4 +13,5 @@ const validaDepartamento = (req: Request, res: Response, next: NextFunction): vo
   next();
 }
 
+
 export default validaDepartamento;

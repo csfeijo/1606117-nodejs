@@ -1,11 +1,16 @@
 import mysql from 'mysql2/promise';
+import dotenv from 'dotenv';
+dotenv.config();
 
+// Para que a conexao funcione, precisamos de um arquivo chamado ".env" que contenha os dados abaixo
+// Ex.: 
+// DB_HOST="localhost"
 const conexao = mysql.createPool({
   connectionLimit: 10,
-  host: 'localhost',
-  user: 'root',
-  password: 'rootpassword',
-  database: 'EMPRESA'
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME
 });
 
 conexao.getConnection().then(connection => {
