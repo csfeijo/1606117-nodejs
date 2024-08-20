@@ -100,14 +100,21 @@ curl -X POST http://localhost:3000/cadastro
 - SQL Injection: entender como funciona para evitar problemas de segurança
 
 ### Aula 08 (19.08.2024)
-- [] Correção do exercício do DELETE
-- [] Arquivo de deploy da Vercel
-- [] Deploy na Vercel
-- [] .env para o banco de dados
-
+- [X] Overview Docker com docker-compose
+- [X] Correção do exercício do DELETE
+- [X] CI/CD com a Vercel
+- [X] Usando um template
+- [X] Arquivo de deploy da Vercel
+- [X] Deploy na Vercel
+- [X] Validators com Next
 
 ### Aula 09 (20.08.2024)
+- [] .env para o banco de dados
+- [] PUT/PATCH para departamentos
+
 ### Aula 10 (22.08.2024)
+- [] Extras
+
 
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|

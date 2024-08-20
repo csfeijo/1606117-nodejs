@@ -24,6 +24,7 @@ export const insereDepartamento = async (req: Request, res: Response) => {
       message: 'Departamento criado'
     })
   } catch (e) {
+    console.log(e)
     res.status(500).json({
       message: 'Erro na criação'
     })
