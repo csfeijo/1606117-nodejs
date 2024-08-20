@@ -5,5 +5,6 @@ const departamentosControllers_1 = require("../controllers/departamentosControll
 const router = (0, express_1.Router)();
 router.get('/departamentos', departamentosControllers_1.listaDepartamentos);
 router.post('/departamentos', departamentosControllers_1.insereDepartamento);
+router.delete('/departamentos', departamentosControllers_1.excluiDepartamento);
 exports.default = router;
 //# sourceMappingURL=departamentosRoutes.js.map

@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.insereDepartamento = exports.listaDepartamentos = void 0;
+exports.excluiDepartamento = exports.insereDepartamento = exports.listaDepartamentos = void 0;
 const connection_1 = __importDefault(require("../services/connection"));
 const listaDepartamentos = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // Executar uma query com o banco
@@ -38,4 +38,39 @@ const insereDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, funct
     }
 });
 exports.insereDepartamento = insereDepartamento;
+const excluiDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const { id } = req.query;
+    try {
+        const [result] = yield connection_1.default.execute('DELETE FROM DEPARTAMENTOS WHERE id_departamento = ?', [id]);
+        if (result.affectedRows === 0) {
+            res.status(404).json({
+                message: 'Departamento não encontrado',
+                id
+            });
+            return;
+        }
+        else {
+            res.json({
+                message: 'Departamento excluído',
+                id
+            });
+            return;
+        }
+    }
+    catch (e) {
+        let message = '';
+        switch (e.code) {
+            case 'ER_ROW_IS_REFERENCED_2':
+                message = 'Departamento possui vinculos e não pode ser excluído.';
+                break;
+            default:
+                message = 'Erro na exclusão do departamento.';
+                break;
+        }
+        res.status(500).json({
+            message
+        });
+    }
+});
+exports.excluiDepartamento = excluiDepartamento;
 //# sourceMappingURL=departamentosControllers.js.map
