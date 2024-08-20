@@ -32,6 +32,7 @@ const insereDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, funct
         });
     }
     catch (e) {
+        console.log(e);
         res.status(500).json({
             message: 'Erro na criação'
         });
