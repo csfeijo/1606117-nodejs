@@ -10,5 +10,8 @@ const validaDepartamento = (req, res, next) => {
     }
     next();
 };
+// TODO: implemente um validador para os parametros vindos na atualização de um departamento
+// MINIMO: clone a funcao acima e a adapte para tambem validar o ID
+// DESAFIO: o ideal é que vc use o MESMO validaDepartamento da inserção, porém faça ele suportar também a validação do ID
 exports.default = validaDepartamento;
 //# sourceMappingURL=validaDepartamento.js.map

@@ -12,7 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.excluiDepartamento = exports.insereDepartamento = exports.listaDepartamentos = void 0;
+exports.atualizaDepartamento = exports.excluiDepartamento = exports.insereDepartamento = exports.listaDepartamentos = void 0;
 const connection_1 = __importDefault(require("../services/connection"));
 const listaDepartamentos = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     // Executar uma query com o banco
@@ -74,4 +74,27 @@ const excluiDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, funct
     }
 });
 exports.excluiDepartamento = excluiDepartamento;
+const atualizaDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const { id } = req.params;
+    const { nome, sigla } = req.body;
+    try {
+        const [result] = yield connection_1.default.execute('UPDATE DEPARTAMENTOS SET nome = ?, sigla = ? WHERE id_departamento = ?', [nome, sigla, id]);
+        if (result.affectedRows === 0) {
+            res.status(404).json({
+                message: 'Departamento não encontrado',
+                id
+            });
+            return;
+        }
+        res.json({
+            message: 'Departamento atualizado'
+        });
+    }
+    catch (e) {
+        res.status(500).json({
+            message: 'Erro ao atualizar o departamento'
+        });
+    }
+});
+exports.atualizaDepartamento = atualizaDepartamento;
 //# sourceMappingURL=departamentosControllers.js.map

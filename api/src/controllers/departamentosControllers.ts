@@ -76,3 +76,30 @@ export const excluiDepartamento = async (req: Request, res: Response) => {
     })
   }
 }
+
+export const atualizaDepartamento = async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const { nome, sigla } = req.body;
+
+  try {
+    const [result] = await conexao.execute<ResultSetHeader>('UPDATE DEPARTAMENTOS SET nome = ?, sigla = ? WHERE id_departamento = ?',
+      [nome, sigla, id]
+    );
+
+    if (result.affectedRows === 0) {
+      res.status(404).json({
+        message: 'Departamento não encontrado',
+        id
+      });
+      return;
+    } 
+
+    res.json({
+      message: 'Departamento atualizado'
+    });
+  } catch(e) {
+    res.status(500).json({
+      message: 'Erro ao atualizar o departamento'
+    });
+  }
+}

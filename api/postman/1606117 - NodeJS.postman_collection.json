@@ -77,6 +77,34 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "PUT departamentos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"{{$randomDepartment}}\",\r\n    \"sigla\": \"{{$randomAbbreviation}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/departamentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"departamentos"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

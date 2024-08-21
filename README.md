@@ -109,10 +109,15 @@ curl -X POST http://localhost:3000/cadastro
 - [X] Validators com Next
 
 ### Aula 09 (20.08.2024)
-- [] .env para o banco de dados
-- [] PUT/PATCH para departamentos
+- [X] .env para o banco de dados
+- [X] PUT/PATCH para departamentos
+- [X] Configuração de environment na Vercel
+- [X] Review de valitadors
 
 ### Aula 10 (22.08.2024)
+- [] Correção do exercício do PUT
+- [] Correção do exercício do Departamentos pelo ID
+- [] CORS
 - [] Extras
 
 
