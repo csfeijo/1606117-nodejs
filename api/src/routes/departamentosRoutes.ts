@@ -5,13 +5,13 @@ import {
   insereDepartamento, 
   listaDepartamentos 
 } from "../controllers/departamentosControllers";
-import { validaDepartamento, validaAtualizacaoDepartamento } from "../middlewares/validaDepartamento";
+import validaDepartamento from "../middlewares/validaDepartamento";
 const router = Router();
 
 router.get('/departamentos', listaDepartamentos);
 router.post('/departamentos', validaDepartamento, insereDepartamento);
 router.delete('/departamentos', excluiDepartamento);
-router.put('/departamentos/:id', validaAtualizacaoDepartamento, atualizaDepartamento);
+router.put('/departamentos/:id', validaDepartamento, atualizaDepartamento);
 
 
 // rota.metodo('/caminho', funcaodevalidacao, funcaoquefazoquetemquefazer)
