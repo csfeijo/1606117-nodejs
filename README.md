@@ -120,6 +120,9 @@ curl -X POST http://localhost:3000/cadastro
 - [] CORS
 - [] Extras
 
+#### Anotações
+- Ferramentas de varredura de código: ficam normalmente interligadas no CI/CD. SonarQube (valida complexidade, code smells, redundância...)
+
 
 ## 🖥️ Repositórios dos colegas
 | Aluno|Repositório|
