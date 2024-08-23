@@ -115,10 +115,11 @@ curl -X POST http://localhost:3000/cadastro
 - [X] Review de valitadors
 
 ### Aula 10 (22.08.2024)
-- [] Correção do exercício do PUT
-- [] Correção do exercício do Departamentos pelo ID
-- [] CORS
-- [] Extras
+- [X] Correção do exercício do PUT
+- [X] Correção do exercício do Departamentos pelo ID
+- [X] Implementação de rota de funcionários com departamentos (conceito BFF)
+- [X] CORS
+- [X] Extras
 
 #### Anotações
 - Ferramentas de varredura de código: ficam normalmente interligadas no CI/CD. SonarQube (valida complexidade, code smells, redundância...)
@@ -129,7 +130,7 @@ curl -X POST http://localhost:3000/cadastro
 |-|-|
 Davi Noé Alves Fernandes | https://github.com/davi93fernandes/aulas-node
 João Carlos Lacerda da Silva Junior | https://github.com/joaocarloslacerda/nodejs-backend
-Fabiana Teixeira Machado | https://github.com/FabianaSoft/nodejs
+Fabiana Teixeira Machado | https://github.com/FabianaSoft/Ex-API1
 Fernando Padilha Fogaça | https://github.com/FernandoFogaca/nodeJS_Backend
 Giuliano | https://github.com/giullianoantonini/nodejsbackend
 Lucas Steigleder | 
