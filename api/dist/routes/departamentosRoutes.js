@@ -10,7 +10,7 @@ const router = (0, express_1.Router)();
 router.get('/departamentos', departamentosControllers_1.listaDepartamentos);
 router.get('/departamentos/:id', departamentosControllers_1.listaDepartamentoPeloId);
 router.post('/departamentos', validaDepartamento_1.default, departamentosControllers_1.insereDepartamento);
-router.delete('/departamentos', departamentosControllers_1.excluiDepartamento);
+router.delete('/departamentos/:id', departamentosControllers_1.excluiDepartamento);
 router.put('/departamentos/:id', validaDepartamento_1.default, departamentosControllers_1.atualizaDepartamento);
 // rota.metodo('/caminho', funcaodevalidacao, funcaoquefazoquetemquefazer)
 exports.default = router;

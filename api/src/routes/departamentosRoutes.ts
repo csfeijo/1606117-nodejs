@@ -12,7 +12,7 @@ const router = Router();
 router.get('/departamentos', listaDepartamentos);
 router.get('/departamentos/:id', listaDepartamentoPeloId)
 router.post('/departamentos', validaDepartamento, insereDepartamento);
-router.delete('/departamentos', excluiDepartamento);
+router.delete('/departamentos/:id', excluiDepartamento);
 router.put('/departamentos/:id', validaDepartamento, atualizaDepartamento);
 
 // rota.metodo('/caminho', funcaodevalidacao, funcaoquefazoquetemquefazer)
