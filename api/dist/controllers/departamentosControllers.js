@@ -51,7 +51,7 @@ const insereDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, funct
 });
 exports.insereDepartamento = insereDepartamento;
 const excluiDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const { id } = req.query;
+    const { id } = req.params;
     try {
         const [result] = yield connection_1.default.execute('DELETE FROM DEPARTAMENTOS WHERE id_departamento = ?', [id]);
         if (result.affectedRows === 0) {
@@ -76,7 +76,7 @@ const excluiDepartamento = (req, res) => __awaiter(void 0, void 0, void 0, funct
                 message = 'Departamento possui vinculos e não pode ser excluído.';
                 break;
             default:
-                message = 'Erro na exclusão do departamento.';
+                message = `Erro na exclusão do departamento. ${e.code}`;
                 break;
         }
         res.status(500).json({

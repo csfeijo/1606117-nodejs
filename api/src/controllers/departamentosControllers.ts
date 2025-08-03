@@ -45,7 +45,7 @@ export const insereDepartamento = async (req: Request, res: Response) => {
 }
 
 export const excluiDepartamento = async (req: Request, res: Response) => {
-  const { id } = req.query;
+  const { id } = req.params;
 
   try {
 
@@ -80,7 +80,7 @@ export const excluiDepartamento = async (req: Request, res: Response) => {
         message = 'Departamento possui vinculos e não pode ser excluído.';
       break;
       default:
-        message = 'Erro na exclusão do departamento.';
+        message = `Erro na exclusão do departamento. ${e.code}`;
       break;
     }
 
